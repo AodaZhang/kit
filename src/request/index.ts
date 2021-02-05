@@ -2,7 +2,7 @@
  * @description 网络请求相关函数
  * @author zhangxinyu 2021.02.03
  */
-import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
+import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios'
 import cryptoJs from 'crypto-js'
 import storage from '../storage'
 import {
@@ -106,15 +106,20 @@ function createAxiosInstance(
       }
       return data
     },
-    (e: AxiosResponse<KitResponseFailure>) => {
+    (e: AxiosError<KitResponseFailure>) => {
+      let data = e || {}
       // [错误提示]存在错误原则则提示
-      if (toast instanceof Function) {
-        const { status, data } = e || {}
-        const { message } = data || {}
-        const reason = message || RESPONSE_STATUS[status]
-        reason && toast(reason)
+      if (e && e.response) {
+        const { status: httpStatus, data: errorData } = e.response
+        const { status, message } = errorData || {}
+        errorData && (data = errorData)
+        const reason =
+          message || RESPONSE_STATUS[status] || RESPONSE_STATUS[httpStatus]
+        if (toast instanceof Function && reason) {
+          toast(reason)
+        }
       }
-      return Promise.reject(e)
+      return Promise.reject(data)
     }
   )
   return axiosInstance

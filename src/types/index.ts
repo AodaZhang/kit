@@ -60,7 +60,16 @@ export interface KitResponseSuccess<T = any> {
 
 /** HTTP响应失败接口 */
 export interface KitResponseFailure {
+  /** 错误原因 */
+  error: string
+  /** 错误信息 */
   message: string
+  /** 错误路径 */
+  path: string
+  /** 错误码 */
+  status: number
+  /** 响应时间戳 */
+  timeStamp: number
 }
 
 /** web存储类型 */
