@@ -30,8 +30,7 @@
     "test:coverage": "jest --coverage",
     "lint:fix": "eslint --fix src/**/*.{ts,tsx,js,jsx}",
     "commit": "git-cz",
-    "changelog": "npm --no-git-tag-version version 0.1.9 && conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "prepublish": "npm run build:all"
+    "changelog": "npm --no-git-tag-version version 0.1.9 && conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
