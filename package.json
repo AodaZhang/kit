@@ -1,7 +1,7 @@
 {
   "name": "@aodazhang/kit",
   "private": false,
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "description": "A Lightweight JavaScript Library",
   "keywords": [
@@ -30,7 +30,7 @@
     "test:coverage": "jest --coverage",
     "lint:fix": "eslint --fix src/**/*.{ts,tsx,js,jsx}",
     "commit": "git-cz",
-    "changelog": "npm --no-git-tag-version version 0.1.6 && conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "changelog": "npm --no-git-tag-version version 0.1.7 && conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "prepublish": "npm run build:all"
   },
   "devDependencies": {
