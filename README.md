@@ -5,7 +5,7 @@
 [![downloads](https://npm.taobao.org/badge/d/@aodazhang/kit.svg)](https://developer.aliyun.com/mirror/npm/package/@aodazhang/kit)
 [![prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-一个轻量级的 JavaScript 业务函数库，支持 ESModule 和 CommonJS。完全由 TypeScript 编写，类型友好。
+一个轻量级的 JavaScript 业务函数库，由 TypeScript 编写类型友好，支持 TreeShaking。
 
 ### 安装
 
