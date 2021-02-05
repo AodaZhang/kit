@@ -1,3 +1,12 @@
+## [0.1.9](https://github.com/AodaZhang/kit/compare/v0.1.8...v0.1.9) (2021-02-05)
+
+
+### Bug Fixes
+
+* **request:** 修复request异常时不能正确显示错误信息问题 ([8f55df0](https://github.com/AodaZhang/kit/commit/8f55df095f4c1baecb94eb77ad459e6c3b33906e))
+
+
+
 ## [0.1.8](https://github.com/AodaZhang/kit/compare/v0.1.7...v0.1.8) (2021-02-05)
 
 
