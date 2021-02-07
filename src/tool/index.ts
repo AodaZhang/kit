@@ -140,7 +140,16 @@ export function transformUtf16(content: string): string {
   })
   return result
 }
-
+/**
+ * 平滑滚动至顶部
+ */
+export function scrollToTop(): void {
+  const c = document.documentElement.scrollTop || document.body.scrollTop
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop)
+    window.scrollTo(0, c - c / 8)
+  }
+}
 export default {
   debounce,
   throttle,
@@ -148,5 +157,6 @@ export default {
   isPlainObject,
   deepClone,
   createWaterMark,
-  transformUtf16
+  transformUtf16,
+  scrollToTop
 }
