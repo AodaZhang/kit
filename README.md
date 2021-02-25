@@ -38,7 +38,8 @@ yarn add @aodazhang/kit -S
 ### NPM Script
 
 - `npm run dev`：启动测试服务器运行代码
-- `npm run build`：运行打包脚本，生成 jest 测试报告并输出 umd、es 格式的目标代码
+- `npm run build`：运行打包脚本，生成 umd、es 格式的目标代码
+- `npm run build:all`：运行打包脚本，生成 jest 测试报告并输出 umd、es 格式的目标代码
 - `npm run test:watch`：运行 jest 测试脚本并挂起
 - `npm run test:coverage`：运行 jest 测试脚本并生成测试覆盖率报告
 - `npm run lint:fix`：运行 eslint 检查代码风格并修复代码
