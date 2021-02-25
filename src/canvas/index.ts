@@ -1,6 +1,6 @@
 /**
  * @description canvas相关函数
- * @author zhangxinyu 2021.02.04
+ * @author aodazhang 2021.02.04
  */
 
 /**

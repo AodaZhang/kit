@@ -1,6 +1,6 @@
 /**
  * @description 网络请求相关函数
- * @author zhangxinyu 2021.02.03
+ * @author aodazhang 2021.02.03
  */
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios'
 import cryptoJs from 'crypto-js'

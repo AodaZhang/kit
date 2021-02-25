@@ -1,6 +1,6 @@
 /**
  * @description 工具相关函数
- * @author zhangxinyu 2021.02.03
+ * @author aodazhang 2021.02.03
  */
 import canvas from '../canvas'
 import device from '../device'

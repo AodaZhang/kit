@@ -1,6 +1,6 @@
 /**
  * @description 乐工jssdk相关函数-单元测试
- * @author zhangxinyu 2021.02.03
+ * @author aodazhang 2021.02.03
  */
 import { joywok } from '@/index'
 
