@@ -5,5 +5,6 @@ import joywok from './joywok'
 import request from './request'
 import storage from './storage'
 import tool from './tool'
+import utils from './utils'
 
-export { canvas, date, device, joywok, request, storage, tool }
+export { canvas, date, device, joywok, request, storage, tool, utils }
